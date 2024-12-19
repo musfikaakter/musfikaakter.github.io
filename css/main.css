@@ -111,6 +111,7 @@ header {
     font-size: var(--size-base);
     font-weight: 600;
     color: var(--rose-color);
+    text-transform: capitalize;
     width: 70%;
 }
 
