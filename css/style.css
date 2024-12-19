@@ -1,0 +1,83 @@
+@import url("./mobile-nav.css");
+@import url("./main.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --size-xs: 0.8rem;
+    --size-sm: 0.9rem;
+    --size-base: 1rem;
+    --size-md: 1.125rem;
+    --size-lg: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.8rem;
+    --size-4xl: 2rem;
+    --size-5xl: 2.5rem;
+    --size-6xl: 3rem;
+    --size-7xl: 4rem;
+    --size-8xl: 5rem;
+
+    /* colors */
+    --dark-color: #001219;
+    --orangish-color: rgb(253, 133, 58);
+    --greyish-color: rgb(176, 181, 190);
+    --indigo-color: rgb(49, 46, 129);
+    --rose-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--dark-color);
+}
+
+img {
+    width: 100%;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    letter-spacing: 0.04rem;
+}
+
+/* section {
+    position: relative;
+} */
+
+.section {
+    padding-top: 4rem;
+    margin-top: 3rem;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.strong {
+    color: var(--indigo-color);
+    font-weight: 600;
+}
