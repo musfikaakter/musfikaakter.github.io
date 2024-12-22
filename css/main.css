@@ -29,30 +29,25 @@
 
 /* // header starts // */
 
-header {
-    position: sticky;
-    top: 1rem;
-    left: 0;
-    z-index: 1111;
-}
-
-.menu__bar {
-    background-color: rgba(49, 46, 129, 0.7);
+.header {
+    background-color: var(--dark-color);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
+    /* position: relative; */
+    left: 0;
+    z-index: 11111;
 }
 
-.header__menu  {
+.header__menu {
     display: none;
 }
 
 .mobile__menu-bar {
     display: block;
+    margin-right: 2rem;
 }
 
 .fa-solid {
@@ -64,20 +59,34 @@ header {
 /* /// hero starts /// */
 
 .hero {
-    padding: 1rem 0 1rem;
+    padding: 4rem 0 10rem;
     background: url(../assets/bg-dark.png);
     background-size: cover;
-    background-position: center right;
+    background-position: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.hero__wrapper {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero__description {
     text-align: center;
 }
 
+.hero__details {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
 .hero__intro {
-    font-size: var(--size-md);
+    font-size: var(--size-lg);
     color: var(--orangish-color);
 }
 
@@ -85,14 +94,11 @@ header {
     font-size: var(--size-2xl);
     color: var(--rose-color);
     margin-top: 0.3rem;
+    text-align: center;
 }
 
-.hero__bottom {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-direction: column;
+.hero__text {
+    display: none;
 }
 
 .hero__image {
@@ -104,15 +110,6 @@ header {
         width: 100%;
         border-radius: 50%;
     }
-}
-
-.hero__bottom-text {
-    text-align: center;
-    font-size: var(--size-base);
-    font-weight: 600;
-    color: var(--rose-color);
-    text-transform: capitalize;
-    width: 70%;
 }
 
 .social__icon {
@@ -155,7 +152,7 @@ header {
     position: fixed;
     right: 0;
     top: 80%;
-    z-index: 999;
+    z-index: 9999;
 }
 
 /* // expertise starts // */
@@ -232,8 +229,8 @@ header {
 
 .tech-stack__item .tooltip {
     position: relative;
-    width: 6.4rem;
-    height: 6.4rem;
+    width: 5.6rem;
+    height: 5.6rem;
     background-color: var(--rose-color);
     border-radius: 0.6rem;
     padding: 0.8rem;
@@ -249,8 +246,8 @@ header {
     top: 6px;
     left: 6px;
     z-index: -1;
-    width: 6.4rem;
-    height: 6.4rem;
+    width: 5.6rem;
+    height: 5.6rem;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.6rem;
     /* box-shadow: 12px 10px 10px rgba(49, 46, 129, 0.1); */
@@ -261,11 +258,23 @@ header {
 }
 
 .tech-stack__item .tooltip:nth-child(odd) {
-    margin-left: 7rem;
+    margin-left: 5rem;
+}
+
+.tech-stack__item .tooltip:nth-child(odd) .tooltiptext {
+    bottom: 30%;
+    right: 106%;
+    border-radius: 5px 0 0 5px;
 }
 
 .tech-stack__item .tooltip:nth-child(even) {
-    margin-right: 7rem;
+    margin-right: 5rem;
+}
+
+.tech-stack__item .tooltip:nth-child(even) .tooltiptext {
+    bottom: 30%;
+    left: 106%;
+    border-radius: 0 5px 5px 0;
 }
 
 /* hover text effect */
@@ -282,21 +291,18 @@ header {
     text-align: center;
     font-size: var(--size-base);
     font-weight: 600;
-    border-radius: 0 5px 5px 0;
     padding: 5px 3px;
-
     position: absolute;
     z-index: 1;
-    bottom: 30%;
-    left: 106%;
     opacity: 0;
     transition: opacity 500ms, color 500ms 300ms, width 500ms;
 }
 
+
 .tooltip:hover .tooltiptext {
     opacity: 1;
     color: #ffffff;
-    width: 7rem;
+    width: 6.3rem;
 }
 
 /* // project starts // */
@@ -483,6 +489,7 @@ header {
     color: var(--rose-color);
     font-size: var(--size-2xl);
     font-weight: 700;
+    margin-bottom: 0.6rem;
 }
 
 .contact__items {
@@ -555,18 +562,13 @@ footer {
     }
 
     .hero {
-        padding-top: 2rem;
+        padding: 4rem 0 12rem;
     }
 
     .hero__image {
         width: 10rem;
         height: 10rem;
-        display: block;
-
-        & img {
-            width: 100%;
-            border-radius: 50%;
-        }
+        /* display: block; */
     }
 
     .expertise__demo {
@@ -590,6 +592,12 @@ footer {
 
     .tech-stack__item .tooltip:nth-child(even) {
         margin: 0;
+    }
+
+    .tech-stack__item .tooltip .tooltiptext {
+        bottom: 30%;
+        left: 106%;
+        border-radius: 0 5px 5px 0 !important;
     }
 
     .space__bottom {
@@ -618,70 +626,12 @@ footer {
         font-size: var(--size-base);
     }
 
-    .menu__bar {
-        width: 60%;
-    }
-
-    .hero__intro {
-        font-size: var(--size-2xl);
-    }
-
-    .hero__title {
-        font-size: var(--size-4xl);
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;
-    }
-
-    .hero__bottom {
-        width: 85%;
-        margin: 1.6rem auto 0;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 1rem;
-    }
-
-    .hero__bottom-text {
-        text-align: left;
-        font-size: var(--size-md);
-        width: 3%;
-    }
-
-    .social__icon {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .expertise__demo {
-        gap: 1rem;
-    }
-
-    .tech-stack__item {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-    }
-
-    .project__box {
-        height: 92dvh;
-    }
-
-}
-
-/* lg screen */
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-
-    .section__text {
-        margin-top: 1rem;
-    }
 
     .header__menu {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: 1.6rem;
+        margin-right: 2rem;
     }
 
     .nav__hover {
@@ -711,21 +661,66 @@ footer {
         transform-origin: left;
     }
 
-    .header__menu {
-        display: flex;
-        width: 100%;
-    }
-
-    .menu__bar {
-        padding: 0.6rem 2rem;
-    }
-
     .mobile__menu-bar {
         display: none;
     }
 
-    .hero {
-        padding-top: 3rem;
+    .hero__intro {
+        font-size: var(--size-2xl);
+    }
+
+    .hero__title {
+        font-size: var(--size-4xl);
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .hero__text {
+        display: block;
+        font-size: var(--size-md);
+        color: var(--rose-color);
+        font-weight: 600;
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    /* .hero__bottom {
+        width: 85%;
+        margin: 1.6rem auto 0;
+        justify-content: space-evenly;
+        gap: 1rem;
+    } */
+
+    .social__icon {
+        display: flex;
+        
+        gap: 0.8rem;
+    }
+
+    .expertise__demo {
+        gap: 1rem;
+    }
+
+    .tech-stack__item {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .project__box {
+        height: 92dvh;
+    }
+
+}
+
+/* lg screen */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .section__text {
+        margin-top: 1rem;
     }
 
     .hero__icon {
@@ -768,6 +763,16 @@ footer {
         width: 90%;
     }
 
+    .tech-stack__item .tooltip {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .tech-stack__item .tooltip::after {
+        width: 6rem;
+        height: 6rem;
+    }
+
     .project__item {
         display: flex;
         justify-content: space-evenly;
@@ -807,16 +812,8 @@ footer {
 @media (min-width: 1280px) {
     .container {
         max-width: 1280px;
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
-    }
-
-    .menu__bar {
-        width: 40%;
-    }
-
-    .hero {
-        padding: 4rem 0 8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .hero__intro {
@@ -827,13 +824,9 @@ footer {
         font-size: var(--size-6xl);
     }
 
-    .hero__bottom {
+    /* .hero__bottom {
         margin-top: 3rem;
-    }
-
-    .hero__bottom-text {
-        font-size: var(--size-lg);
-    }
+    } */
 
     .social__icon {
         gap: 1rem;
@@ -859,14 +852,14 @@ footer {
     }
 
     .tech-stack__item .tooltip {
-        width: 7rem;
-        height: 7rem;
+        width: 6.8rem;
+        height: 6.8rem;
         padding: 1rem;
     }
 
     .tech-stack__item .tooltip::after {
-        width: 7rem;
-        height: 7rem;
+        width: 6.8rem;
+        height: 6.8rem;
     }
 
     .project__box {
@@ -880,8 +873,8 @@ footer {
 @media (min-width: 1536px) {
     .container {
         max-width: 1536px;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
     }
 
     .section__details {

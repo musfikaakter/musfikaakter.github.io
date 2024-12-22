@@ -2,7 +2,7 @@
 
 const mobileNav = () => {  
     const headerButton = document.querySelector('.mobile__menu-bar');
-    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileNav = document.querySelector('.mobile__nav');
     
     headerButton.addEventListener('click', () => {
         mobileNav.style.display = 'grid';

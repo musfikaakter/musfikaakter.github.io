@@ -9,13 +9,13 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/script.js"></script>
+    <!-- <script defer src="js/card.js"></script> -->
     <title>Musfika Akter</title>
   </head>
   <body>
-    <header class="container">
-      <nav class="menu__bar">
+    <header class="header container">
+      <nav>
         <ul class="header__menu">
-          <li><a class="nav__hover" href="#about">About</a></li>
           <li><a class="nav__hover" href="#expertise">Expertise</a></li>
           <li><a class="nav__hover" href="#project">Project</a></li>
           <li>
@@ -34,10 +34,10 @@
           </i>
         </a>
       </nav>
-      <div class="mobile-nav">
+      <!-- /// mobile menu /// -->
+      <div class="mobile__nav">
         <nav>
           <ul class="mobile__nav-menu">
-            <li><a class="mobile__nav-link" href="#about">About</a></li>
             <li><a class="mobile__nav-link" href="#expertise">Expertise</a></li>
             <li><a class="mobile__nav-link" href="#project">Project</a></li>
             <li><a class="mobile__nav-link" href="resume/CV_Musfika_Akter.pdf" target="_blank">Resume</a></li>
@@ -49,49 +49,46 @@
     </header>
     <main>
       <!-- // hero starts // -->
-      <section class="hero" id="about">
-        <div class="container">
-          <div class="light__top-scroll">
-            <a href="#"><img src="assets/sun.png" alt="Theme" /></a>
-            <a href="#"><img src="assets/angle.png" alt="Scroll top" /></a>
-          </div>
-          <div class="hero__description">
-            <h3 class="hero__intro">Hi, I'm Musfika Akter</h3>
-            <h1 class="hero__title">
-              FRONT-END <br />
-              WEB DEVELOPER
-            </h1>
-          </div>
-          <div class="hero__bottom">
-            <p class="hero__bottom-text">
-              Passionate & Dedicated Frontend Web Developer
-            </p>
+      <section class="hero container" id="about">
+          <div class="hero__wrapper">
+            <div class="light__top-scroll">
+              <a href="#"><img src="assets/sun.png" alt="Theme" /></a>
+              <a href="#"><img src="assets/angle.png" alt="Scroll top" /></a>
+            </div>
             <div class="hero__image">
               <img src="assets/me.png" alt="" />
             </div>
-            <div class="social__icon">
-              <div class="hero__dot">...</div>
-              <div class="hero__icon">
-                <a href="https://github.com/musfikaakter" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
+            <div class="hero__details">
+              <div class="hero__description">
+                <h3 class="hero__intro">Musfika Akter</h3>
+                <h1 class="hero__title">
+                  FRONT-END <br> WEB DEVELOPER
+                </h1>
+                <p class="hero__text">Hi there! I'm Musfika Akter. Dedicated & Passionate Frontend Web Developer</p>
               </div>
-              <div class="hero__icon">
-                <a
-                  href="https://www.linkedin.com/in/mst-musfika-akter-750520172/"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
+              <div class="social__icon">
+                  <div class="hero__dot">...</div>
+                  <div class="hero__icon">
+                    <a href="https://github.com/musfikaakter" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                  <div class="hero__icon">
+                    <a
+                      href="https://www.linkedin.com/in/mst-musfika-akter-750520172/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </div>
+                  <div class="hero__icon">
+                    <a href="https://web.facebook.com/ak.musfika" target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </div>
+                  <div class="hero__dot">...</div>
               </div>
-              <div class="hero__icon">
-                <a href="https://web.facebook.com/ak.musfika" target="_blank"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-              </div>
-              <div class="hero__dot">...</div>
             </div>
           </div>
-        </div>
       </section>
       <!-- // hero ends // -->
       <!-- // service starts // -->
@@ -421,6 +418,9 @@
           </div>
           <div class="contact__items">
             <div class="contact__icon">
+              <a href="https://github.com/musfikaakter" target="_blank">Github</a>
+            </div>
+            <div class="contact__icon">
               <a href="mailto:akmusfika.dev@gmail.com" target="_blank">Email</a>
             </div>
             <div class="contact__icon">
@@ -437,9 +437,6 @@
               <a href="https://web.facebook.com/ak.musfika" target="_blank"
                 >Facebook</a
               >
-            </div>
-            <div class="contact__icon">
-              <a href="mailto:akmusfika.dev@gmail.com" target="_blank">Email</a>
             </div>
           </div>
         </div>
