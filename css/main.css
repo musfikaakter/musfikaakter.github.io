@@ -1,3 +1,36 @@
+/* // preloader style // */
+
+#preloader {
+    background: rgb(0, 0, 0);
+    height: 100dvh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader__circle {
+    height: 3rem;
+    width: 3rem;
+    border: 6px dashed #ce0be6;
+    border-radius: 50%;
+    animation: screen-loader 2000ms ease-in-out infinite;
+}
+
+@keyframes screen-loader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* // common style // */
 
 .section__title {
@@ -693,7 +726,7 @@ footer {
 
     .social__icon {
         display: flex;
-        
+
         gap: 0.8rem;
     }
 
@@ -767,7 +800,7 @@ footer {
         width: 6rem;
         height: 6rem;
     }
-    
+
     .tech-stack__item .tooltip::after {
         width: 6rem;
         height: 6rem;
