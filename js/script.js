@@ -10,4 +10,16 @@ const mobileNav = () => {
     });
 };
 
+// theme color
+
+const darkMode = () => {
+    const themeBtn = document.querySelectorAll('#sun-light');
+    themeBtn.forEach(btn => {
+        btn.addEventListener('click', () =>{
+            document.body.classList.toggle('light-mode');
+        });
+    });
+}
+
 mobileNav();
+darkMode();

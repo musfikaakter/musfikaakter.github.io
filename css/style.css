@@ -25,11 +25,28 @@
     --size-8xl: 5rem;
 
     /* colors */
+    --body-dark-color: #001219;
     --dark-color: #001219;
     --orangish-color: rgb(253, 133, 58);
     --greyish-color: rgb(176, 181, 190);
+    --white-color: rgb(255, 255, 255);
     --indigo-color: rgb(49, 46, 129);
+    --body-rose-color: rgb(255, 255, 255);
     --rose-color: rgb(255, 255, 255);
+}
+
+.light-mode {
+    --body-rose-color: rgb(0, 18, 25);
+    --greyish-color: rgb(49, 46, 129);
+    --body-dark-color: rgb(255, 255, 255);
+
+    & .hero {
+        background-image: url(../assets/bg-light.png);
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 html {
@@ -39,7 +56,8 @@ html {
 body {
     font-family: "Barlow", Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-color: var(--dark-color);
+    background-color: var(--body-dark-color);
+    color: var(--rose-color);
 }
 
 img {

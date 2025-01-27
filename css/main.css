@@ -37,13 +37,13 @@
     position: absolute;
     left: 0;
     width: 2rem;
-    border-right: 3px solid var(--rose-color);
+    border-right: 3px solid var(--dark-color);
     background-color: var(--greyish-color);
     padding: 0.2rem;
     text-align: center;
 
     & p {
-        color: var(--dark-color);
+        color: var(--body-dark-color);
         font-size: var(--size-lg);
         font-weight: 600;
         margin-bottom: 0.6rem;
@@ -51,7 +51,7 @@
 }
 
 .section__details {
-    color: var(--rose-color);
+    color: var(--body-rose-color);
     font-weight: 400;
     font-size: var(--size-sm);
 }
@@ -125,7 +125,7 @@
 
 .hero__title {
     font-size: var(--size-2xl);
-    color: var(--rose-color);
+    color: var(--body-rose-color);
     margin-top: 0.3rem;
     text-align: center;
 }
@@ -162,7 +162,7 @@
 
     & i {
         font-size: var(--size-lg);
-        color: var(--dark-color);
+        color: var(--body-dark-color);
     }
 }
 
@@ -283,7 +283,6 @@
     height: 5.6rem;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.6rem;
-    /* box-shadow: 12px 10px 10px rgba(49, 46, 129, 0.1); */
 }
 
 .tech-stack__item .tooltip:hover {
@@ -296,7 +295,7 @@
 
 .tech-stack__item .tooltip:nth-child(odd) .tooltiptext {
     bottom: 30%;
-    right: 106%;
+    right: 100%;
     border-radius: 5px 0 0 5px;
 }
 
@@ -519,7 +518,7 @@
 }
 
 .contact__title {
-    color: var(--rose-color);
+    color: var(--orangish-color);
     font-size: var(--size-2xl);
     font-weight: 700;
     margin-bottom: 0.6rem;
@@ -711,18 +710,11 @@ footer {
     .hero__text {
         display: block;
         font-size: var(--size-md);
-        color: var(--rose-color);
+        color: var(--body-rose-color);
         font-weight: 600;
         width: 60%;
         margin: 1rem auto;
     }
-
-    /* .hero__bottom {
-        width: 85%;
-        margin: 1.6rem auto 0;
-        justify-content: space-evenly;
-        gap: 1rem;
-    } */
 
     .social__icon {
         display: flex;
