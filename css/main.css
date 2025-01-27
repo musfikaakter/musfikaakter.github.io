@@ -188,6 +188,12 @@
     z-index: 9999;
 }
 
+#sun-light {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 /* // expertise starts // */
 
 .expertise__demo {
