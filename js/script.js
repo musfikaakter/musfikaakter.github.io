@@ -23,3 +23,12 @@ const darkMode = () => {
 
 mobileNav();
 darkMode();
+
+// on top scroll
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth' 
+    });
+  }
