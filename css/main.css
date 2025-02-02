@@ -188,7 +188,7 @@
     z-index: 9999;
 }
 
-#sun-light {
+#sun-light, #scroll-on__top {
     background-color: transparent;
     border: none;
     outline: none;
