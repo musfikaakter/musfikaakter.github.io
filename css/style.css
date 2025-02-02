@@ -21,16 +21,13 @@
     --size-4xl: 2rem;
     --size-5xl: 2.5rem;
     --size-6xl: 3rem;
-    --size-7xl: 4rem;
-    --size-8xl: 5rem;
 
     /* colors */
     --body-dark-color: #001219;
     --dark-color: #001219;
     --orangish-color: rgb(253, 133, 58);
     --greyish-color: rgb(176, 181, 190);
-    --white-color: rgb(255, 255, 255);
-    --indigo-color: rgb(49, 46, 129);
+    --indigo-color: #312e81;
     --body-rose-color: rgb(255, 255, 255);
     --rose-color: rgb(255, 255, 255);
 }
@@ -39,6 +36,10 @@
     --body-rose-color: rgb(0, 18, 25);
     --greyish-color: rgb(49, 46, 129);
     --body-dark-color: rgb(255, 255, 255);
+
+    & .header {
+        border-bottom: 1px solid var(--orangish-color);
+    }
 
     & .hero {
         background-image: url(../assets/bg-light.png);
@@ -58,6 +59,7 @@ body {
     overflow-x: hidden;
     background-color: var(--body-dark-color);
     color: var(--rose-color);
+    cursor: url(../assets/my-cursor.png), auto;
 }
 
 img {
@@ -94,4 +96,35 @@ p {
 .strong {
     color: var(--indigo-color);
     font-weight: 600;
+}
+
+/* // custom scrollbar for body // */
+
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(49, 46, 129, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--orangish-color);
+    outline: 1px solid var(--indigo-color);
+    border-radius: 1rem;
+}
+
+/* // custom scrollbar for project-box // */
+
+.project__box::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.project__box::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(49, 46, 129, 0.3);
+}
+
+.project__box::-webkit-scrollbar-thumb {
+    background-color: var(--orangish-color);
+    outline: 1px solid var(--indigo-color);
 }
