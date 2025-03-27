@@ -1,6 +1,6 @@
 .mobile__nav {
     position: fixed;
-    top: 10%;
+    top: 8%;
     left: 0;
     z-index: 1111;
     height: 100%;
@@ -44,4 +44,8 @@
 .mobile__nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.mobile__menu-bar {
+    
 }

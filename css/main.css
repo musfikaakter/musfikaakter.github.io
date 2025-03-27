@@ -63,6 +63,7 @@
 
 .header {
     background-color: var(--body-dark-color);
+    border-bottom: 1px solid var(--dark-color);
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     display: flex;
@@ -81,6 +82,10 @@
 .mobile__menu-bar {
     display: block;
     margin-right: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .fa-solid {
@@ -188,7 +193,7 @@
     z-index: 9999;
 }
 
-#sun-light, #scroll-on__top {
+#sun-light, #scroll-to__top {
     background-color: transparent;
     border: none;
     outline: none;

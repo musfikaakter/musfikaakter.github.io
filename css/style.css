@@ -127,4 +127,5 @@ body::-webkit-scrollbar-thumb {
 .project__box::-webkit-scrollbar-thumb {
     background-color: var(--orangish-color);
     outline: 1px solid var(--indigo-color);
+    border-radius: 0 2rem 2rem 0;
 }

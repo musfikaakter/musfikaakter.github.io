@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/flower.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/flower.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/91a0658ecc.js"
@@ -12,9 +12,10 @@
     <title>Musfika Akter</title>
   </head>
   <body>
+    <script>0</script>
     <div id="preloader">
       <div>
-        <img class="preloader__circle" src="./assets/flower.png" alt="">
+        <img class="preloader__circle" src="./assets/flower.png" alt="" loading="lazy"/>
       </div>
     </div>
     <header class="header container">
@@ -33,66 +34,79 @@
           </li>
           <li><a class="nav__hover" href="#contact">Contact</a></li>
         </ul>
-        <a class="mobile__menu-bar" href="#">
-          <i class="fa-solid fa-bars">
-          </i>
-        </a>
-      </nav>
-      <!-- /// mobile menu /// -->
-      <div class="mobile__nav">
-        <nav>
+        <button class="mobile__menu-bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- /// mobile menu /// -->
+        <nav class="mobile__nav">
           <ul class="mobile__nav-menu">
-            <li><a class="mobile__nav-link" href="#expertise">Expertise</a></li>
-            <li><a class="mobile__nav-link" href="#project">Project</a></li>
-            <li><a class="mobile__nav-link" href="resume/Resume_Musfika_Akter.pdf" target="_blank">Resume</a></li>
-            <li><a class="mobile__nav-link" href="#contact">Contact</a></li>
+            <li>
+              <a class="mobile__nav-link" href="#expertise">Expertise</a>
             </li>
+            <li><a class="mobile__nav-link" href="#project">Project</a></li>
+            <li>
+              <a
+                class="mobile__nav-link"
+                href="resume/Resume_Musfika_Akter.pdf"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a class="mobile__nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
+      </nav>
     </header>
     <main>
       <!-- // hero starts // -->
       <section class="hero container" id="about">
-          <div class="hero__wrapper">
-            <div class="light__top-scroll">
-              <button id="sun-light"><img src="assets/sun.png" alt="Theme" /></button>
-              <button id="scroll-on__top" onclick="scrollToTop()"><img src="assets/angle.png" alt="Scroll top" /></button>
+        <div class="hero__wrapper">
+          <div class="light__top-scroll">
+            <button id="sun-light">
+              <img src="assets/sun.png" alt="D/L"  loading="lazy"/>
+            </button>
+            <button id="scroll-to__top">
+              <img src="assets/angle.png" alt="Scroll top"  loading="lazy"/>
+            </button>
+          </div>
+          <div class="hero__image">
+            <img src="assets/me.png" alt=""  loading="lazy"/>
+          </div>
+          <div class="hero__details">
+            <div class="hero__description">
+              <h3 class="hero__intro">Musfika Akter</h3>
+              <h1 class="hero__title">
+                FRONT-END <br />
+                WEB DEVELOPER
+              </h1>
+              <p class="hero__text">
+                Hi there! I'm Musfika Akter. Dedicated & Passionate Frontend Web
+                Developer
+              </p>
             </div>
-            <div class="hero__image">
-              <img src="assets/me.png" alt="" />
-            </div>
-            <div class="hero__details">
-              <div class="hero__description">
-                <h3 class="hero__intro">Musfika Akter</h3>
-                <h1 class="hero__title">
-                  FRONT-END <br> WEB DEVELOPER
-                </h1>
-                <p class="hero__text">Hi there! I'm Musfika Akter. Dedicated & Passionate Frontend Web Developer</p>
+            <div class="social__icon">
+              <div class="hero__dot">...</div>
+              <div class="hero__icon">
+                <a href="https://github.com/musfikaakter" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
-              <div class="social__icon">
-                  <div class="hero__dot">...</div>
-                  <div class="hero__icon">
-                    <a href="https://github.com/musfikaakter" target="_blank"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                  </div>
-                  <div class="hero__icon">
-                    <a
-                      href="https://www.linkedin.com/in/mst-musfika-akter-750520172/"
-                      target="_blank"
-                      ><i class="fa-brands fa-linkedin"></i
-                    ></a>
-                  </div>
-                  <div class="hero__icon">
-                    <a href="https://web.facebook.com/ak.musfika" target="_blank"
-                      ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                  </div>
-                  <div class="hero__dot">...</div>
+              <div class="hero__icon">
+                <a
+                  href="https://www.linkedin.com/in/mst-musfika-akter-750520172/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
               </div>
+              <div class="hero__icon">
+                <a href="https://web.facebook.com/ak.musfika" target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </div>
+              <div class="hero__dot">...</div>
             </div>
           </div>
+        </div>
       </section>
       <!-- // hero ends // -->
       <!-- // service starts // -->
@@ -111,88 +125,25 @@
           </div>
           <div class="expertise__demo">
             <div class="demo-item">
-              <img src="assets/html.png" alt="" />
+              <img src="assets/html.png" alt=""  loading="lazy"/>
               <h4>WEB DEVELOPMENT</h4>
             </div>
             <div class="demo-item">
-              <img src="assets/bootstrap.png" alt="" />
+              <img src="assets/bootstrap.png" alt=""  loading="lazy"/>
               <h4>FRONTEND DEVELOPMENT</h4>
             </div>
             <div class="demo-item">
-              <img src="assets/wordpress2.png" alt="wordpress" />
+              <img src="assets/wordpress2.png" alt="wordpress"  loading="lazy"/>
               <h4>CMS WEBSITE</h4>
             </div>
             <div class="demo-item">
-              <img src="assets/phone.png" alt="phone" />
+              <img src="assets/phone.png" alt="phone"  loading="lazy"/>
               <h4>RESPONSIVE DESIGN</h4>
             </div>
           </div>
         </div>
       </section>
       <!-- // service ends // -->
-      <!-- // tech-stack starts // -->
-      <section class="tech-stack section" id="tech-stack">
-        <div class="tech-stack__wrapper container">
-          <div class="section__title">
-            <p>T</p>
-            <p>E</p>
-            <p>C</p>
-            <p>H</p>
-            <p>S</p>
-            <p>T</p>
-            <p>A</p>
-            <p>C</p>
-            <p>K</p>
-          </div>
-          <div class="tech-stack__item">
-            <div class="tooltip">
-              <img src="assets/HTML2.png" alt="html" />
-              <span class="tooltiptext">HTML</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/CSS3_logo.svg.png" alt="css" />
-              <span class="tooltiptext">CSS</span>
-            </div>
-            <div class="tooltip">
-              <img
-                style="border-radius: 0.3rem"
-                src="assets/JavaScript-logo.png"
-                alt="javascript"
-              />
-              <span class="tooltiptext">JAVASCRIPT</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/gsap.png" alt="gsap" />
-              <span class="tooltiptext">GSAP</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/wordpress.png" alt="wordpress" />
-              <span class="tooltiptext">WORDPRESS</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/tailwind.png" alt="tailwind" />
-              <span class="tooltiptext">TAILWIND</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/sass-logo.png" alt="sass" />
-              <span class="tooltiptext">SASS</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/Bootstrap_logo.png" alt="bootstrap" />
-              <span class="tooltiptext">BOOTSTRAP</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/FIGMA.png" alt="figma" />
-              <span class="tooltiptext">FIGMA</span>
-            </div>
-            <div class="tooltip">
-              <img src="assets/github.png" alt="github" />
-              <span class="tooltiptext">GITHUB</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- // tech-stack ends // -->
       <!-- // project starts // -->
       <section class="project section" id="project">
         <div class="container">
@@ -210,16 +161,16 @@
             <div class="project__item" id="project__item1">
               <div class="project__item-image">
                 <a href="https://silqi.shop/" target="_blank"
-                  ><img
-                    src="assets/Silqi-Shop.png"
-                    alt="Silqi Shop"
+                  ><img src="assets/Silqi-Shop.png" alt="Silqi Shop" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
-                <h4><a href="https://silqi.shop/" target="_blank">Silqi Shop</a></h4>
+                <h4>
+                  <a href="https://silqi.shop/" target="_blank">Silqi Shop</a>
+                </h4>
                 <p>
-                  Created this website with WordPress, Astra theme & Elementor. This is
-                  a E-commerce website for women's fashion and dress.
+                  Created this website with WordPress, Astra theme & Elementor.
+                  This is a E-commerce website for women's fashion and dress.
                 </p>
                 <div class="project__item-tech">
                   <div class="project__tech">WORDPRESS</div>
@@ -231,12 +182,14 @@
             <div class="project__item" id="project__item2">
               <div class="project__item-image">
                 <a href="https://gamerworld69.netlify.app/" target="_blank"
-                  ><img src="assets/gaming2.png" alt="gaming landing page"
+                  ><img src="assets/gaming2.png" alt="gaming landing page" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
                 <h4>
-                  <a href="https://github.com/musfikaakter/Gaming_landing_page" target="_blank"
+                  <a
+                    href="https://github.com/musfikaakter/Gaming_landing_page"
+                    target="_blank"
                     >Game World</a
                   >
                 </h4>
@@ -255,12 +208,14 @@
                 <a href="https://car-doctor99.netlify.app/" target="_blank"
                   ><img
                     src="assets/car-doctor.png"
-                    alt="car doctor landing page"
+                    alt="car doctor landing page" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
                 <h4>
-                  <a href="https://github.com/musfikaakter/Car-Doctor" target="_blank"
+                  <a
+                    href="https://github.com/musfikaakter/Car-Doctor"
+                    target="_blank"
                     >Car Doctor</a
                   >
                 </h4>
@@ -277,12 +232,14 @@
             <div class="project__item" id="project__item4">
               <div class="project__item-image">
                 <a href="https://dcode-tech.netlify.app/" target="_blank"
-                  ><img src="assets/dcode.png" alt="dcode tech website"
+                  ><img src="assets/dcode.png" alt="dcode tech website" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
                 <h4>
-                  <a href="https://github.com/musfikaakter/DCode-tech-Portfolio" target="_blank"
+                  <a
+                    href="https://github.com/musfikaakter/DCode-tech-Portfolio"
+                    target="_blank"
                     >DCode Tech</a
                   >
                 </h4>
@@ -299,7 +256,7 @@
             <div class="project__item" id="project__item5">
               <div class="project__item-image">
                 <a href="#"
-                  ><img src="assets/dokan.png" alt="dokan e-commerce website"
+                  ><img src="assets/dokan.png" alt="dokan e-commerce website" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
@@ -317,15 +274,15 @@
             </div>
             <div class="project__item" id="project__item6">
               <div class="project__item-image">
-                <a
-                  href="https://shishu-gamer.netlify.app/" target="_blank"
-                  ><img src="assets/gaming.png" alt="kids gaming landing page"
+                <a href="https://shishu-gamer.netlify.app/" target="_blank"
+                  ><img src="assets/gaming.png" alt="kids gaming landing page" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
                 <h4>
                   <a
-                    href="https://github.com/musfikaakter/Gaming-landing-page-kids" target="_blank"
+                    href="https://github.com/musfikaakter/Gaming-landing-page-kids"
+                    target="_blank"
                     >Sishu Gamer</a
                   >
                 </h4>
@@ -342,12 +299,14 @@
             <div class="project__item" id="project__item7">
               <div class="project__item-image">
                 <a href="https://fitness69.netlify.app/" target="_blank"
-                  ><img src="assets/fitness.png" alt="fitness landing page"
+                  ><img src="assets/fitness.png" alt="fitness landing page" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
                 <h4>
-                  <a href="https://github.com/musfikaakter/Fitness-Website" target="_blank"
+                  <a
+                    href="https://github.com/musfikaakter/Fitness-Website"
+                    target="_blank"
                     >Fitness</a
                   >
                 </h4>
@@ -365,7 +324,7 @@
             <div class="project__item" id="project__item8">
               <div class="project__item-image">
                 <a href="#"
-                  ><img src="assets/marketing.png" alt="marketing landing page"
+                  ><img src="assets/marketing.png" alt="marketing landing page" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
@@ -383,7 +342,7 @@
             <div class="project__item" id="project__item9">
               <div class="project__item-image">
                 <a href="#"
-                  ><img src="assets/techwave.png" alt="techwave landing page"
+                  ><img src="assets/techwave.png" alt="techwave landing page" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
@@ -403,7 +362,7 @@
                 <a href="#"
                   ><img
                     src="assets/prothom-alo.png"
-                    alt="prothom alo newspaper"
+                    alt="prothom alo newspaper" loading="lazy"
                 /></a>
               </div>
               <div class="project__item-description">
@@ -425,7 +384,12 @@
             <div class="space__bottom"></div>
           </div>
           <div class="poject__page">
-            <a class="poject__page-link" href="./pages/project.html" target="_blank">View all</a>
+            <a
+              class="poject__page-link"
+              href="./pages/project.html"
+              target="_blank"
+              >View all</a
+            >
           </div>
         </div>
       </section>
@@ -441,9 +405,6 @@
             </p>
           </div>
           <div class="contact__items">
-            <div class="contact__icon">
-              <a href="https://github.com/musfikaakter" target="_blank">Github</a>
-            </div>
             <div class="contact__icon">
               <a href="mailto:akmusfika.dev@gmail.com" target="_blank">Email</a>
             </div>
