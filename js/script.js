@@ -1,21 +1,14 @@
 /// mobile menu open
 
-const headerButton = document.querySelector(".mobile__menu-bar");
+const headerButton = document.querySelectorAll(".mobile__menu-bar");
 const mobileNav = document.querySelector(".mobile__nav");
-let isMobileNavOpen = false;
 
-headerButton.addEventListener("click", () => {
-  isMobileNavOpen = !isMobileNavOpen;
-
-  if (isMobileNavOpen) {
-    mobileNav.style.display = "grid";
-    document.body.style.overflowY = "hidden";
-  } else {
-    mobileNav.style.display = "none";
-    document.body.style.overflowY = "auto";
-  }
-
-});
+headerButton.forEach((click) => {
+  click.addEventListener("click", () => {
+      mobileNav.classList.toggle("mobile_nav-slide");
+  
+  });
+})
 
 
 /// check if a link is clicked or not
@@ -24,13 +17,10 @@ const mobileNavLink = document.querySelectorAll(".mobile__nav-link");
 
 mobileNavLink.forEach((link) => {
   link.addEventListener(
-    "click", (checkLink = (e) => {
+    "click", (checkLink = () => {
 
-      if (e.target.classList.contains("mobile__nav-link")) {
-        mobileNav.style.display = "none";
-        document.body.style.overflowY = "auto";
-        isMobileNavOpen = false;
-      }
+      mobileNav.classList.remove("mobile_nav-slide")
+
 
     }))
 });

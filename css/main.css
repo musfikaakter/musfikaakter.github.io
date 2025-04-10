@@ -88,9 +88,8 @@
     cursor: pointer;
 }
 
-.fa-solid {
-    font-size: 1.3rem;
-    color: var(--orangish-color);
+.ham_bar{
+    width: 1.3rem;
     margin-left: 1rem;
 }
 
@@ -157,17 +156,15 @@
 }
 
 .hero__icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.1rem;
+    width: 2.1rem;
     background-color: var(--greyish-color);
-    padding: 0.3rem;
     border-radius: 50%;
     display: grid;
     place-content: center;
 
-    & i {
-        font-size: var(--size-lg);
-        color: var(--body-dark-color);
+    & .icon_svg {
+        width: var(--size-lg);
     }
 }
 

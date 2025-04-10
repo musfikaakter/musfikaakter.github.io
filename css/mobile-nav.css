@@ -1,14 +1,21 @@
 .mobile__nav {
     position: fixed;
-    top: 8%;
-    left: 0;
+    top: 0;
+    left: 35%;
     z-index: 1111;
-    height: 100%;
-    width: 100%;
+    height: 40%;
+    width: 30%;
     background-color: var(--body-dark-color);
-    display: none;
     place-content: center;
     text-align: center;
+    border-radius: 0 0 2vmin 2vmin;
+    box-shadow: 0px 0px 20px var(--orangish-color);
+    transform: translateY(-110%);
+    transition: 300ms linear;
+}
+
+.mobile_nav-slide {
+    transform: translateY(0);
 }
 
 .mobile__nav-menu {
@@ -44,8 +51,4 @@
 .mobile__nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-}
-
-.mobile__menu-bar {
-    
 }
