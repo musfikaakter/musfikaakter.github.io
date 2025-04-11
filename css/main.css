@@ -88,7 +88,7 @@
     cursor: pointer;
 }
 
-.ham_bar{
+.ham_bar {
     width: 1.3rem;
     margin-left: 1rem;
 }
@@ -158,7 +158,7 @@
 .hero__icon {
     height: 2.1rem;
     width: 2.1rem;
-    background-color: var(--greyish-color);
+    background-color: var(--orangish-color);
     border-radius: 50%;
     display: grid;
     place-content: center;
@@ -170,7 +170,7 @@
 
 .hero__dot {
     font-size: 2rem;
-    color: var(--greyish-color);
+    color: var(--orangish-color);
 }
 
 .light__top-scroll {
@@ -190,12 +190,14 @@
     z-index: 9999;
 }
 
-#sun-light, #scroll-to__top {
+#sun-light,
+#scroll-to__top {
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
 }
+
 /* // expertise starts // */
 
 .expertise__demo {
@@ -355,6 +357,32 @@
     margin-top: 3rem;
 }
 
+.project__tab {
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.project__tab>* {
+    margin: 0 0.4rem;
+}
+
+.project__tab button {
+    background-color: transparent;
+    color: var(--orangish-color);
+    font-size: var(--size-sm);
+    font-weight: 600;
+    border: 2px solid var(--orangish-color);
+    border-radius: 2rem;
+    padding: 0.4rem 1.2rem;
+    cursor: pointer;
+    transition: color 200ms, background-color 200ms;
+}
+
+.tab_style {
+    background-color: var(--orangish-color) !important;
+    color: var(--rose-color) !important;
+}
+
 .project__box {
     background-color: var(--indigo-color);
     border-radius: 1rem;
@@ -362,14 +390,27 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    height: 90dvh;
     overflow-y: scroll;
     overflow-x: hidden;
     display: grid;
     gap: 3rem;
 }
 
+.project__box-html {
+    height: 78dvh;
+}
+
+.project__box-wordpress {
+    height: 75dvh;
+    display: none;
+}
+
 .project__item {
+    background: url(../assets/bg-light.png);
+    background-color: #d8e2dc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -377,11 +418,6 @@
     border-radius: 1rem;
     padding: 1rem;
     margin: 0;
-    background: url(../assets/bg-light.png);
-    background-color: #d8e2dc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     transition: box-shadow 200ms;
 }
 
@@ -497,18 +533,6 @@
     top: 9rem;
 }
 
-#project__item8 {
-    top: 10rem;
-}
-
-#project__item9 {
-    top: 11rem;
-}
-
-#project__item10 {
-    top: 12rem;
-}
-
 .space__top {
     height: 4rem;
 }
@@ -516,27 +540,6 @@
 .space__bottom {
     height: 6rem;
 }
-
-.poject__page {
-    text-align: center;
-    margin: 4rem auto 0;
-}
-
-.poject__page-link {
-    color: var(--orangish-color);
-    font-size: var(--size-sm);
-    font-weight: 600;
-    border: 2px solid var(--orangish-color);
-    border-radius: 2rem;
-    padding: 0.4rem 1.2rem;
-    transition: color 200ms, background-color 200ms;
-}
-
-.poject__page-link:hover {
-    background-color: var(--orangish-color);
-    color: var(--rose-color);
-}
-
 
 /* // contact starts // */
 
@@ -678,7 +681,8 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .contact__icon a, .poject__page-link{
+    .contact__icon a,
+    .poject__page-link {
         font-size: var(--size-base);
     }
 }
@@ -693,7 +697,6 @@ footer {
     .section__details {
         font-size: var(--size-base);
     }
-
 
     .header__menu {
         display: flex;
@@ -763,8 +766,17 @@ footer {
         gap: 2rem;
     }
 
-    .project__box {
-        height: 92dvh;
+    .project__tab button {
+        font-size: var(--size-md);
+        padding: 0.6rem 1.4rem;
+    }
+    
+.project__box-html {
+    height: 86dvh;
+}
+
+    .project__box-wordpress {
+        height: 80dvh;
     }
 
 }
@@ -858,12 +870,12 @@ footer {
         }
     }
 
-    .project__box {
-        height: 100dvh;
+    .project__box-html {
+        height: 94dvh;
     }
 
-    .poject__page-link {
-        font-size: var(--size-md);
+    .project__box-wordpress {
+        height: 86dvh;
     }
 }
 
@@ -923,7 +935,7 @@ footer {
     }
 
     .project__box {
-        height: 95dvh;
+        height: 86dvh;
     }
 
 }
